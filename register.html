@@ -35,33 +35,39 @@
             <form action="" onsubmit="return validateform()">
 
             <input type="text" name="myname1" placeholder="Name" id="name" required>
-            <input type="email" name="myemail" placeholder="Email-Id" id="" required>
+            <input type="email" name="myemail" placeholder="Email-Id" required>
             <input type="tel" name="myphone" placeholder="Phone No." id="phonenum" required>
-            <input type="number" name="myage" placeholder="Age" id="" required>
+            <input type="number" name="myage" placeholder="Age" required>
+            
             <h4>Gender</h4>
-            <input type="radio" name="mygender" id="" required> Male &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            <input type="radio" name="mygender" id=""> Female
+            <input type="radio" name="mygender" required> Male &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <input type="radio" name="mygender"> Female
+
             <h4>Departure</h4>
-            <input type="datetime-local" name="departuredate" id="" required>
+            <input type="datetime-local" name="departuredate" required>
+
             <h4>Return</h4>
-            <input type="datetime-local" name="returndate" id="" required>
+            <input type="datetime-local" name="returndate" required>
+
             <h4>Travel Destination</h4>
-            <input type="checkbox" name="td" id=""> Kashmir &nbsp; &nbsp; &nbsp;
-            <input type="checkbox" name="td" id=""> Istanbul &nbsp; &nbsp; &nbsp;
-            <input type="checkbox" name="td" id=""> Paris &nbsp; &nbsp; &nbsp;
-            <input type="checkbox" name="td" id=""> Bali &nbsp; &nbsp; &nbsp;
-            <input type="checkbox" name="td" id=""> Dubai &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            <input type="checkbox" name="td" id=""> Geneva &nbsp; &nbsp; &nbsp; 
-            <input type="checkbox" name="td" id=""> Port Blair &nbsp; &nbsp; &nbsp;
-            <input type="checkbox" name="td" id=""> Rome &nbsp; &nbsp; &nbsp;
+            <input type="checkbox" name="td"> Kashmir &nbsp; &nbsp; &nbsp;
+            <input type="checkbox" name="td"> Istanbul &nbsp; &nbsp; &nbsp;
+            <input type="checkbox" name="td"> Paris &nbsp; &nbsp; &nbsp;
+            <input type="checkbox" name="td"> Bali &nbsp; &nbsp; &nbsp;
+            <input type="checkbox" name="td"> Dubai &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="checkbox" name="td"> Geneva &nbsp; &nbsp; &nbsp; 
+            <input type="checkbox" name="td"> Port Blair &nbsp; &nbsp; &nbsp;
+            <input type="checkbox" name="td"> Rome &nbsp; &nbsp; &nbsp;
+
             <br> <br>
             <h4>Package</h4>
-            <input type="radio" name="locations" id="loc1" required> Bronze &nbsp; &nbsp; &nbsp;
-            <input type="radio" name="locations" id="loc1"> Silver &nbsp; &nbsp; &nbsp;
-            <input type="radio" name="locations" id="loc1"> Gold &nbsp; &nbsp; &nbsp;
-            <input type="radio" name="locations" id="loc1"> Platinum &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="locations" required> Bronze &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="locations"> Silver &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="locations"> Gold &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="locations"> Platinum &nbsp; &nbsp; &nbsp;
+
             <br> <br> 
-            <input type="checkbox" name="t&c" id="" checked required> I accept the Terms & Conditions.
+            <input type="checkbox" name="t&c" checked required> I accept the Terms & Conditions.
             <br> <br> 
             <input type="submit" value="Submit" class="submitbtn">
 
@@ -87,13 +93,13 @@
             <div class="footlinks">
                 <h4>Connect</h4>
                 <div class="social">
-                    <a href="https://www.facebook.com/mohd.rahil.blogger" target="_blank"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://www.instagram.com/mohdrahil101" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://www.twitter.com/mohdrahil101" target="_blank"><i class='bx bxl-twitter' ></i></a>
-                    <a href="https://www.linkedin.com/in/mohdrahil101" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="https://www.youtube.com/techdollarz" target="_blank"><i class='bx bxl-youtube' ></i></a>
-                    <a href="https://www.mohdrahil.wordpress.com" target="_blank"><i class='bx bxl-wordpress' ></i></a>
-                    <a href="https://www.github.com/mohdrahil101" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                    <a href="https://www.wordpress.com/" target="_blank"><i class='bx bxl-wordpress' ></i></a>
+                    <a href="https://www.github.com/" target="_blank"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
             
@@ -101,7 +107,7 @@
     </div>
 
     <div class="end">
-        <p>Copyright © 2022 Firstflight Travels All Rights Reserved.<br>Website developed by: Mohd. Rahil</p>
+        <p>Copyright © 2025 Firstflight Travels. All Rights Reserved.<br>Website developed by: Yash</p>
     </div>
 </section>
 
@@ -110,15 +116,15 @@
     function validateform(){ 
         var tel=document.getElementById("phonenum").value;  
 
-        if(tel.length<10){  
-            alert("Phone number must be of atleast 10 digits!");  
+        if(tel.length < 10){  
+            alert("Phone number must be at least 10 digits!");  
             return false;  
         } else if(isNaN(tel)){
-            alert("Phone number should not include character!");
+            alert("Phone number should contain only numbers!");
             return false;
         }
         return true;
-}  
+    }  
 </script>
 
 </body>
